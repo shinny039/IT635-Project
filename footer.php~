@@ -20,4 +20,5 @@ default:
 	break;
 }
 
+fclose($input);
 ?>

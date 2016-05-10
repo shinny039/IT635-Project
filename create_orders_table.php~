@@ -18,9 +18,9 @@ $sqlquery = "CREATE TABLE orders (
 			 		 
 		 		 ) ";
 if ( $conn->query($sqlquery)){ 
-    echo "Your orders table has been created successfully!"; 
+    echo "Your table has been created successfully!"; 
 } else { 
-    echo "ERROR: Orders table has not been created.".mysqli_connect_error();
+    echo "ERROR: table has not been created.".mysqli_connect_error();
 }
 ?>
 

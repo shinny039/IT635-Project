@@ -39,7 +39,7 @@ $product_name = trim(fgets($input));
 	$productMatch = $mysqli->num_rows; 
     if ($productMatch > 0) {
 		$mysqli = $conn->query("DELETE FROM products WHERE product_name='$product_name'");
-		$mysqli = $conn->query("DELETE FROM category WHERE product_id='$id'");
+		$mysqli = $conn->query("DELETE FROM category WHERE product_id='$row'");
 		echo "Product is removed from the database";
 	}
     else{

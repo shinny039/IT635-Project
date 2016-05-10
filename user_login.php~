@@ -19,7 +19,7 @@ if($username == "user" && $password == "password")
 }
 else
 {
-	echo "Please try again.";	
+	echo "Access Denied";	
 	exit;
 }
 

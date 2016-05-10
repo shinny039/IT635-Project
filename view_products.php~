@@ -23,7 +23,7 @@ $mysqlii = $conn->query("SELECT * FROM products");
 	//	echo "Price:$".$row['price'].PHP_EOL;
 	//	echo "Category:".$row['category'].PHP_EOL;
 	//	echo "Deatils:".$row['details'].PHP_EOL;
-	//			
+	//	echo "--------------------------------------------------------".PHP_EOL;		
 //
 //		}
 
@@ -41,7 +41,7 @@ $mysqlii = $conn->query("SELECT * FROM products");
 		echo "Price:$".$row['price'].PHP_EOL;	
 		echo "Category:".$row1['category'].PHP_EOL;
 		echo "Deatils:".$row1['details'].PHP_EOL;
-		echo "--------------------------------------------------------".PHP_EOL;
+
 		}
 	
 break;	}

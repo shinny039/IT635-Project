@@ -26,10 +26,10 @@ $phone = trim(fgets($input));
 echo "Email-id".PHP_EOL;
 $email = trim(fgets($input));
 
-$mysqli=$conn->query("SELECT * FROM cart WHERE cart_id=1");
-$row=$mysqli->fetch_assoc();
-echo $product_name=$row['product_name'];
-echo $product_quantity=$row['product_quantity'];
+//$mysqli=$conn->query("SELECT * FROM cart WHERE cart_id=1");
+//$row=$mysqli->fetch_assoc();
+//echo $product_name=$row['product_name'];
+//echo $product_quantity=$row['product_quantity'];
 
 $sql = $conn->query("INSERT INTO orders(product_name , product_quantity, firstname, surname, add1, add2, postcode, phone, email)		 		 
 			 		values ('$product_name', '$product_quantity', '$first', '$last', '$add1','$add2', '$postcode','$phone', '$email')");

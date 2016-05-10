@@ -12,13 +12,13 @@ switch(trim($line))
         include ('add_item_cart.php');
         break;
         case "2":
-        include ('Ordersm.php'); 
+        include ('place_order.php'); 
 	break;
 	case "3":
-        include ('orderhm.php'); 
+        include ('order_history.php'); 
 	break;        
 	case "4":
-	include ('orderrem.php'); 
+	include ('remove_order.php'); 
         break;	
 	case "exit":
 	break;

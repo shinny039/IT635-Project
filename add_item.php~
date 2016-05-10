@@ -21,13 +21,15 @@ $category= trim(fgets($input));
 		echo 'Sorry you tried to place a duplicate "$Product Name" into the database.'.PHP_EOL;
 		exit();
 	}
+
+
 	
 	$sql = $conn->query("INSERT INTO products (product_name, price, date_added) 
         VALUES('$product_name','$price',now())") or die (mysqli_connect_error());
 
 	$mysqli = $conn->query("SELECT id FROM products WHERE product_name='$product_name' LIMIT 1")->fetch_object()->id;
 	//$row = $mysqli->fetch_assoc();
-	//print ""."$mysqli";
+	print ""."$mysqli";
 
 	$sql = $conn->query("INSERT INTO category (product_id, details, category) 
         VALUES('$mysqli','$details','$category')") or die (mysqli_connect_error());

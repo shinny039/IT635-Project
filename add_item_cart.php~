@@ -38,7 +38,7 @@ $mysqli1 = $conn->query("SELECT id FROM products WHERE product_name='$product_na
 $mysqli = $conn->query("SELECT * FROM cart LIMIT 1");
 
 	$orderMatch = $mysqli->num_rows;
-    	//echo "--------------------------------------------------------".PHP_EOL;
+    	echo "--------------------------------------------------------".PHP_EOL;
 	echo "Your cart has".PHP_EOL;
 	while($row = $mysqli->fetch_assoc())
 		{
